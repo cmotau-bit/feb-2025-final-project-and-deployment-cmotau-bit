@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shakoai Foundation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- ✅ Google Fonts for typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset margin and padding for all elements */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Styling for html and body */
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;  /* Default font */
+      background-color: #fdf6f0;  /* Light background color */
+      color: #333;  /* Dark text color for contrast */
+      line-height: 1.7;  /* Line height for better readability */
+    }
+
+    /* Header styling */
+    header {
+      background-color: #ffcccc;  /* Light red color */
+      text-align: center;
+      padding: 2rem;  /* Padding for spacing */
+    }
+
+    /* Navigation bar styling */
+    nav {
+      background-color: #505051;  /* Dark grey background */
+      color: white;  /* White text */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem;
+      font-weight: 600;  /* Bold text for emphasis */
+    }
+
+    /* Styling for navigation links */
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;  /* Space between links */
+    }
+
+    /* Main container to hold sidebar and content */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;  /* Sidebar takes 1 fraction and content 3 fractions */
+      gap: 2rem;  /* Space between grid items */
+      padding: 2rem;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      background-color: #ffe4e1;  /* Light pink color */
+      padding: 1.5rem;
+      border-radius: 8px;  /* Rounded corners */
+      box-shadow: 0 2px 6px rgba(110, 109, 109, 0.1);  /* Subtle shadow */
+    }
+
+    /* Content area styling */
+    .content {
+      background-color: #fefefe;  /* White background */
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(110, 109, 109, 0.1);  /* Shadow for depth */
+    }
+
+    /* Grid layout for image gallery */
+    .image-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Responsive grid */
+      gap: 20px;  /* Space between images */
+      justify-items: center;
+      margin-top: 1rem;
+    }
+
+    /* Styling for each image item */
+    .image-item {
+      text-align: center;
+      max-width: 400px;  /* Max width for images */
+    }
+
+    .image-item img {
+      width: 100%;  /* Image fills container */
+      height: 280px;  /* Fixed height */
+      object-fit: cover;  /* Maintain aspect ratio */
+      border-radius: 16px;  /* Rounded corners */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover transition */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Light shadow */
+      cursor: pointer;  /* Pointer cursor on hover */
+    }
+
+    .image-item img:hover {
+      transform: scale(1.03);  /* Slight zoom effect on hover */
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);  /* Stronger shadow on hover */
+    }
+
+    .image-item p {
+      margin-top: 0.5rem;  /* Space between image and caption */
+      font-size: 0.9rem;  /* Smaller font size for captions */
+      color: #555;  /* Medium grey color for text */
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #1f2933;  /* Dark grey background */
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;  /* Smaller text */
+      width: 100%;
+    }
+
+    /* Social media icons styling */
+    .social-icons {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .social-icons a {
+      color: white;  /* White color for icons */
+      font-size: 1.5rem;  /* Icon size */
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #ffcccc;  /* Light red on hover */
+    }
+
+    /* Responsive styling for smaller screens (below 768px) */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;  /* Stack sidebar and content */
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;  /* Center align nav items */
+      }
+
+      .image-wrapper {
+        grid-template-columns: 1fr;  /* Stack images vertically */
+      }
+
+      .image-item img {
+        height: auto;  /* Auto height for images on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header section with logo -->
+  <header>
+    <img src="Logo1.jpg" alt="logo" />
+  </header>
+
+  <!-- Navigation bar with links to other pages -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Main content section with two columns: Sidebar and Content -->
+  <div class="container">
+    <!-- Sidebar with mission, vision, and goals -->
+    <div class="sidebar">
+      <h3>MISSION</h3>
+      <p>Our mission is to provide a safe, loving, and nurturing environment for children in need. Through shelter, education, and emotional support, we empower them to overcome adversity and build a future filled with hope and opportunity.</p><br>
+
+      <h3>VISION</h3>
+      <p>We envision a world where every child regardless of their background has access to a supportive home, quality education, and a caring community. By fostering resilience and opportunities for growth, we aim to shape confident, independent individuals who contribute positively to society.</p><br>
+
+      <h3>GOAL</h3>
+      <ul>
+        <li><strong>Provide Stability & Safety:</strong> Ensure every child has access to a secure, caring environment.</li>
+        <li><strong>Support Holistic Development:</strong> Offer education, health care, and emotional support to nurture well-rounded individuals.</li>
+        <li><strong>Empower & Educate:</strong> Equip children with knowledge and life skills that enable them to thrive in their future endeavors.</li>
+      </ul>
+    </div>
+
+    <!-- Content area with images and captions -->
+    <div class="content">
+      <h2>Moments that matter</h2>
+      <p>Behind every photo is a story of generosity, hope, and positive change. These moments remind us that together, we can shape a brighter future.</p><br/>
+
+      <div class="image-wrapper">
+        <div class="image-item">
+          <img src="image5.jpeg" alt="Image5" />
+          <p>Joyful learning moments</p>
+        </div>
+        <div class="image-item">
+          <img src="image6.webp" alt="Image6" />
+          <p>Creative arts and crafts</p>
+        </div>
+        <div class="image-item">
+          <img src="image7.webp" alt="Image7" />
+          <p>Group bonding activities</p>
+        </div>
+        <div class="image-item">
+          <img src="image8.webp" alt="Image8" />
+          <p>Outdoor exploration</p>
+        </div>
+        <div class="image-item">
+          <img src="image4.jpg" alt="Image4" />
+          <p>Learning</p>
+        </div>
+        <div class="image-item">
+          <img src="image3.webp" alt="Image3" />
+          <p>Place of rest</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with copyright and social media icons -->
+  <footer>
+    &copy; Shakoai Foundation. All Rights Reserved.
+    <div class="social-icons">
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+</body>
+</html>

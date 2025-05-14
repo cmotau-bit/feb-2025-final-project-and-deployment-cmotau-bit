@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags for character encoding and viewport settings for responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Page Title -->
+  <title>About - Shakoai Foundation</title>
+
+  <!-- ✅ Google Fonts: Merriweather for headings and Poppins for body text -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Universal Reset: Ensures no default margin, padding, or box sizing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global body styles */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fdf6f0; /* Light background color */
+      color: #333; /* Text color */
+      line-height: 1.6; /* Line height for readability */
+    }
+
+    /* Header (h1, h2, h3) styles for a serif font */
+    h1, h2, h3 {
+      font-family: 'Merriweather', serif;
+    }
+
+    /* Header section style */
+    header {
+      background-color: #ffcccc; /* Light pink background */
+      text-align: center;
+      padding: 2rem; /* Padding around the content */
+    }
+
+    /* Navigation bar styles */
+    nav {
+      background-color: #505051; /* Dark grey background */
+      color: white; /* White text color */
+      display: flex;
+      justify-content: space-around; /* Space links evenly */
+      align-items: center;
+      padding: 1rem; /* Padding around the nav */
+      font-weight: 600; /* Bold text */
+    }
+
+    /* Navigation links styles */
+    nav a {
+      color: white; /* White text */
+      text-decoration: none; /* Remove underlines */
+      font-weight: bold; /* Bold text */
+      margin: 0 1rem; /* Spacing between links */
+    }
+
+    /* Main content area */
+    main {
+      padding: 2rem;
+    }
+
+    /* About Us section container */
+    .about-us {
+      max-width: 1200px;
+      margin: 0 auto; /* Center content */
+    }
+
+    /* Heading style in About Us section */
+    .about-us h2 {
+      font-size: 2rem; /* Large font size for section titles */
+      margin-bottom: 1rem;
+    }
+
+    /* Paragraph style in About Us section */
+    .about-us p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem; /* Slightly larger font */
+      line-height: 1.8; /* Increased line height for readability */
+    }
+
+    /* Team section styling */
+    .team {
+      display: flex; /* Flexbox layout */
+      gap: 20px; /* Space between team members */
+      align-items: center; /* Align items to the center */
+      flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+      justify-content: flex-start; /* Align items to the start */
+      margin-top: 2rem; /* Spacing above the team section */
+    }
+
+    /* Individual team member styling */
+    .member img {
+      width: 250px; /* Set image width */
+      height: 250px; /* Set image height */
+      border-radius: 50%; /* Circular images */
+      object-fit: cover; /* Cover the container area */
+      transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    }
+
+    /* Hover effect for team member images */
+    .member img:hover {
+      transform: scale(1.1); /* Scale up on hover */
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    }
+
+    /* Text under each team member's image */
+    .member p {
+      text-align: center; /* Center text */
+      margin-top: 0.5rem;
+      font-size: 1.1rem; /* Slightly larger text */
+    }
+
+    /* Footer section styling */
+    footer {
+      background-color: #1f2933; /* Dark background */
+      color: white; /* White text */
+      text-align: center;
+      padding: 1.5rem; /* Padding around the footer */
+      margin-top: 2rem; /* Space above the footer */
+      font-size: 0.9rem; /* Smaller text size */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header with the logo of the Foundation -->
+  <header>
+    <img src="Logo1.jpg" alt="logo"> <!-- Image of the logo -->
+  </header>
+
+  <!-- Navigation bar with links to other pages -->
+  <nav>
+    <a href="index.html">Home</a> <!-- Link to Home page -->
+    <a href="about.html">About</a> <!-- Link to About page -->
+    <a href="contact.html">Contact</a> <!-- Link to Contact page -->
+  </nav>
+
+  <!-- Main content area -->
+  <main>
+    <!-- About Us section -->
+    <section class="about-us">
+      <!-- Our Story section -->
+      <h2>Our Story</h2>
+      <p><strong>Shakoai Foundation </strong>is more than just a home it’s a place of healing, learning, and growth. Founded with the belief that every child deserves love and opportunity, we provide shelter, education, and emotional support to children who have faced adversity. Through structured programs, mentorship, and a strong community network, we empower young lives to dream, achieve, and flourish.</p>
+      
+      <!-- Our Approach section -->
+      <h2>Our Approach</h2>
+      <p>Holistic Care: We nurture children’s physical, emotional, and intellectual well-being. Education & Skill Development: We equip children with knowledge and life skills for a brighter future. Community Involvement: We collaborate with individuals and organizations to maximize impact. Long-Term Support: We ensure children have the guidance they need as they transition into adulthood.</p>
+
+      <!-- Ways to contribute to the foundation -->
+      <ul>
+        <li><strong>Volunteer Your Time:</strong> Join us in mentoring, tutoring, or simply offering companionship.</li>
+        <li><strong>Donate:</strong> Support our mission by contributing to food, education, and wellness programs.</li>
+        <li><strong>Sponsor a child:</strong> Make a lasting difference by funding a child's educational journey.</li>
+        <li><strong>Spread Awareness:</strong> Share our mission and help us grow our community of supporters.</li>
+      </ul><br>
+
+      <!-- Team section -->
+      <h2>Our Team</h2>
+      <div class="team">
+        <!-- Team member 1 -->
+        <div class="member">
+          <img src="Image.jpeg" alt="Nomthandazo - Founder" /> <!-- Team member image -->
+          <p><strong>Nomthandazo - Founder</strong></p> <!-- Team member name -->
+        </div>
+        <!-- Team member 2 -->
+        <div class="member">
+          <img src="za.JPG" alt="Zanele - Project Manager" /> <!-- Team member image -->
+          <p><strong>Zanele - Project Manager</strong></p> <!-- Team member name -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with copyright -->
+  <footer>
+    <p>&copy; Shakoai Foundation. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
